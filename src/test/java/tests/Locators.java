@@ -50,6 +50,31 @@ public class Locators {
         // second syntax   . for class,  # for id
         WebElement byCss2 = driver.findElement(By.cssSelector("div.row"));
 
+        // going from parent to child, use > sign
+        // li.list-group-item > a
+        // in css, we can not go from child to parent
+
+
+        // 8. xpath
+        // 1) absolute xpath    /html/body/div/div/div
+        // 2) relative xpath    //div[@id='flash-messages']
+        /*
+        xpath methods
+        //div[contains(@class,'columns')]
+        //div[starts-with(@class,'large')]
+        //a[text()='Dropdown']     or    //a[.='Dropdown']
+
+         */
+
+        //      //*[@*='*']    first * means any tags,  second * means any attribute, third * means value = "*"
+
+        /*
+        parent from child    //div[@id='content']/style
+        child from parent    //div[@id='content']/style/..
+        //nav[@class='navbar navbar-expand-sm bg-light']/following-sibling::div
+        //div[@class='container']/preceding-sibling::nav
+        follwing and preceding method is locating all the elements next or previous to it
+         */
 
 
 
