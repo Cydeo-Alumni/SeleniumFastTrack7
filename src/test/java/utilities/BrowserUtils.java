@@ -4,6 +4,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
 import org.testng.*;
 
+import java.time.*;
+
 public class BrowserUtils {
     //Methods are static. Because we do not want to create an object to call those methods.
     // We just want to call those methods with class name. That is why they are static type
@@ -42,8 +44,8 @@ public class BrowserUtils {
 
 
     public static void waitForInvisibilityOf(WebElement element){
-        //WebDriverWait wait = new WebDriverWait(Driver.getDriver(),15);
-        //wait.until(ExpectedConditions.invisibilityOf(element));
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.invisibilityOf(element));
     }
 
 
