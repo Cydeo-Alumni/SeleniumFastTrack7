@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.*;
 import utilities.*;
 
@@ -17,4 +18,10 @@ public class CheckBoxPage {
     //5. Click checkbox #2 to deselect it.
     //6. Confirm checkbox #1 is SELECTED.
     //7. Confirm checkbox #2 is NOT selected.
+
+    @FindBy(id = "box1")
+    public WebElement box1;
+
+    @FindBy(id = "box2")
+    public WebElement box2;
 }
