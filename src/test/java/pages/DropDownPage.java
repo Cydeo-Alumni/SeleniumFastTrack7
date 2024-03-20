@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.*;
 import org.openqa.selenium.devtools.v85.page.*;
 import org.openqa.selenium.support.*;
 import utilities.*;
@@ -30,5 +31,8 @@ public class DropDownPage {
     //3. Print out all selected values and verify each is selected.
     //4.Deselect all values and verify each is deselected.
 
+
+    @FindBy(id = "state")
+    public WebElement stateDropDown;
 
 }
