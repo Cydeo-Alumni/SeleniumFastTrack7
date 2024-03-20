@@ -24,8 +24,17 @@ public class RadioButtonPage {
     }
 
 
-    @FindBy(id = "sdfds")
-    public WebElement button2;
+    @FindBy(id = "blue")
+    public WebElement blueButton;
+
+    @FindBy(id = "football")
+    public WebElement footballButton;
+
+    @FindBy(id = "red")
+    public WebElement redButton;
+
+    @FindBy(id = "green")
+    public WebElement greenButton;
 
 
 }
