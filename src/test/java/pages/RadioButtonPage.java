@@ -8,7 +8,6 @@ import utilities.*;
 public class RadioButtonPage {
 
 
-
     public RadioButtonPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
