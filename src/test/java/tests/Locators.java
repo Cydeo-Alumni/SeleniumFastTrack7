@@ -3,6 +3,7 @@ package tests;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.*;
+import org.testng.annotations.*;
 
 public class Locators {
 
@@ -81,4 +82,6 @@ public class Locators {
 
 
     }
+
+
 }
