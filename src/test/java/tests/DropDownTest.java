@@ -27,6 +27,7 @@ public class DropDownTest {
         selectState.selectByIndex(5);
 
         //5. Verify final selected option is California.
+        //Assert.assertTrue(selectState.getFirstSelectedOption());
         String acutalOption = selectState.getFirstSelectedOption().getText();  // california
         String expectedOption = "California";
         Assert.assertEquals(acutalOption, expectedOption);
