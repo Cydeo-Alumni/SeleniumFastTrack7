@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.*;
 import utilities.*;
 
@@ -16,5 +17,11 @@ public class WindowHandlePage {
     //5. Switch to Cydeo page
     //6. Assert: Title is “Cydeo”
     //7.Switch back to main handle
+
+    @FindBy(linkText = "Click Here")
+    public WebElement clickLink;
+
+    @FindBy(linkText = "CYDEO")
+    public WebElement cydeoLink;
 
 }
