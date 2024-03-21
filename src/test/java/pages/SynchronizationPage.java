@@ -28,4 +28,16 @@ public class SynchronizationPage {
     @FindBy(id = "login")
     public WebElement form;
 
+    @FindBy(id = "username")
+    public WebElement userNameInput;
+
+    @FindBy(id = "pwd")
+    public WebElement passwordInput;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement submitButton;
+
+    @FindBy(id = "flash")
+    public WebElement flashMsg;
+
 }
