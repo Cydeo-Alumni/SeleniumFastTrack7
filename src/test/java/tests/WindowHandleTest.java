@@ -45,7 +45,7 @@ public class WindowHandleTest {
         Driver.getDriver().switchTo().window(mainHandle);
         Assert.assertEquals(Driver.getDriver().getTitle(), "Windows");
 
-
+        Driver.closeDriver();
 
 
     }
