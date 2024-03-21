@@ -39,4 +39,36 @@ public class ActionsTest {
 
 
     }
+
+    @Test
+    public void test2(){
+        //1. Go	to https://practice.cydeo.com/
+        driver.get("https://practice.cydeo.com/");
+
+        //2. Right click on A/B Testing link
+        //3. Open link in new window
+        actions.contextClick(actionsPage.abTestingLink)
+                .sendKeys(Keys.ARROW_DOWN, Keys.ARROW_DOWN, Keys.RETURN).perform();
+
+        //4. Verify title is "No A/B Test"
+        Assert.assertEquals(driver.getTitle(), "No A/B Test");
+    }
+
+    @Test
+    public void test3(){
+
+        //1. Go	to https://practice.cydeo.com/
+        driver.get("https://practice.cydeo.com/");
+
+        //2. Scroll down to "Cydeo" link
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        js.executeScript("arguments[0].scrollIntoView(true)", actionsPage.cydeoLink);
+
+        BrowserUtils.sleep(3);
+
+        js.executeScript("arguments[0].scrollIntoView(true)", actionsPage.homeLink);
+
+
+    }
 }

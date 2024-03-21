@@ -48,4 +48,13 @@ public class ActionsPage {
 
     @FindBy(xpath = "(//h5)[3]")
     public WebElement name3;
+
+    @FindBy(linkText = "A/B Testing")
+    public WebElement abTestingLink;
+
+    @FindBy(linkText = "CYDEO")
+    public WebElement cydeoLink;
+
+    @FindBy(linkText = "Home")
+    public WebElement homeLink;
 }
