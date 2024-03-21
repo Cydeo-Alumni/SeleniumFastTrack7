@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.*;
 import utilities.*;
 
@@ -29,4 +30,22 @@ public class ActionsPage {
     //1. Go	to https://practice.cydeo.com/
     //2. Scroll down to "Cydeo" link
     //3. Scroll up to "Home" link
+
+    @FindBy(xpath = "(//img)[1]")
+    public WebElement image1;
+
+    @FindBy(xpath = "(//img)[2]")
+    public WebElement image2;
+
+    @FindBy(xpath = "(//img)[3]")
+    public WebElement image3;
+
+    @FindBy(xpath = "(//h5)[1]")
+    public WebElement name1;
+
+    @FindBy(xpath = "(//h5)[2]")
+    public WebElement name2;
+
+    @FindBy(xpath = "(//h5)[3]")
+    public WebElement name3;
 }
